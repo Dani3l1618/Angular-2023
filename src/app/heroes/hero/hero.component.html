@@ -1,0 +1,34 @@
+<div class="container-fluid card hero-card">
+  <div class="card-body">
+    <h1 class="card-title hero-card--title">{{ superHeroName }}</h1>
+
+    <ul class="list">
+      <li class="list--item">
+        Nombre
+        <span class="list--description">{{ personalName }}</span>
+      </li>
+
+      <li class="list--item">
+        Edad
+        <span class="list--description">{{ superHeroAge }}</span>
+      </li>
+
+      <li class="list--item">
+        Método
+        <span class="list--description">{{ concatNameAndAge() }}</span>
+      </li>
+
+      <li class="list--item">
+        Capitalizado
+        <span class="list--description">{{ superHeroName | uppercase }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card-footer hero-card--footer">
+    <button class="btn btn-primary" (click)="changeHero()">
+      Cambiar nombre
+    </button>
+    <button class="btn btn-primary" (click)="changeAge()">Cambiar edad</button>
+  </div>
+</div>
